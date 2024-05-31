@@ -18,7 +18,7 @@ class BerandaController extends Controller
     public function index1()
     {
 
-        return view('content.dashbord');
+        return view('content.dashboard');
     }
     public function index2()
     {
@@ -30,6 +30,42 @@ class BerandaController extends Controller
 
         return view('content.users');
     }
+    public function index4()
+    {
+
+        return view('content.pinjamru');
+    }
+    public function index5()
+    {
+
+        return view('content.pinjamal');
+    }
+    public function index6()
+    {
+
+        return view('content.laporanru');
+    }
+    public function index7()
+    {
+
+        return view('content.laporanal');
+    }
+    public function index8()
+    {
+
+        return view('content.dashboardaslab');
+    }
+    public function index9()
+    {
+
+        return view('content.pinruaslab');
+    }
+    public function index10()
+    {
+
+        return view('content.datapinjamaslab');
+    }
+
 
     /**
      * Show the form for creating a new resource.

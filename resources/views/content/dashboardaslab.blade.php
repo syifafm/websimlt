@@ -7,7 +7,11 @@
             <div class="col-md-12 grid-margin">
                 <div class="row">
                     <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                        <h4>User Baru</h4>
+                        <h4>Dashboard</h4>
+                
+                        <br>
+                        <h3 class="font-weight-bold" >SISTEM INFORMASI LAB TERINTEGRASI</h3>
+                        <h6 class="font-weight-normal mb-0">Selamat Datang, Aslab</h6>
                     </div>
                     <div class="col-12 col-xl-4">
                         <div class="justify-content-end d-flex">
@@ -19,16 +23,14 @@
         </div>
 
 
+        <br>
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title">Kelola Data User</h2>
-                    <button type="button" class="btn btn-outline-info btn-icon-text">
-                        <i class="ti-plus btn-icon-prepend"></i>
-                        Tambah User
-                    </button>
+                    <h2 class="card-title">Jadwal Peminjaman</h2>
                     <p class="card-description">
                     </p>
+                    
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -37,19 +39,22 @@
                                         Id
                                     </th>
                                     <th>
-                                        Nama Lengkap
-                                    </th>
-                                    <th>
                                         Username
                                     </th>
                                     <th>
-                                        NIP/NIM
+                                        Peminjaman
                                     </th>
                                     <th>
-                                        Status
+                                        Jam Mulai
                                     </th>
                                     <th>
-                                        Aksi
+                                        Jam Berakhir
+                                    </th>
+                                    <th>
+                                        Tanggal
+                                    </th>
+                                    <th>
+                                        Keterangan
                                     </th>
                                 </tr>
                             </thead>
@@ -59,19 +64,22 @@
                                         12345
                                     </td>
                                     <td>
-                                        Syifa Fauziah Mansur
-                                    </td>
-                                    <td>
                                         syifau
                                     </td>
                                     <td>
-                                        2005712
+                                        Lab Komputer
                                     </td>
                                     <td>
-                                        <label class="badge badge-info">Aslab</label>
+                                        07.00
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger">Hapus</button>
+                                        09.00
+                                    </td>
+                                    <td>
+                                        20-05-2024
+                                    </td>
+                                    <td>
+                                        Praktikum matkul Desweb
                                     </td>
                                 </tr>
                             </tbody>
@@ -80,5 +88,4 @@
                 </div>
             </div>
         </div>
-
         @endsection
