@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\PinjamController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +42,22 @@ Route::get('/formpeminjaman-delete/{id}', [PinjamController::class, 'delete']);
 
 Route::get('/formpeminjaman-edit/{id}', [PinjamController::class, 'edit']);
 Route::put('/formpeminjaman-update', [PinjamController::class, 'update']);
+
+Route::get('/login', function () {
+    return view('content.login');
+});
+Route::post('/postlogin', 'App\Http\Controllers\LoginController@postlogin')->name('postlogin');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/dashboard', [BerandaController::class, 'index1']);
+
+    Route::get('/pinjamru', [PinjamController::class, 'index']);
+
+    Route::get('/formpeminjaman-create', [PinjamController::class, 'create']);
+    Route::post('/formpeminjaman-store', [PinjamController::class, 'store']);
+
+    Route::get('/formpeminjaman-delete/{id}', [PinjamController::class, 'delete']);
+
+    Route::get('/formpeminjaman-edit/{id}', [PinjamController::class, 'edit']);
+    Route::put('/formpeminjaman-update', [PinjamController::class, 'update']);
+});
