@@ -65,6 +65,11 @@ class BerandaController extends Controller
 
         return view('content.datapinjamaslab');
     }
+    public function index11()
+    {
+
+        return view('content.formpeminjaman_edit');
+    }
 
 
     /**

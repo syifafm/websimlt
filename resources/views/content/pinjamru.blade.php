@@ -26,30 +26,47 @@
                     <p class="card-description">
 
                     </p>
+                    <button type="button" class="btn btn-outline-info btn-icon-text">
+                        <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-create">Tambah pinjaman</a>
+
+                    </button>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
+
                                 <tr>
                                     <th>
-                                        Id
+                                        No
                                     </th>
                                     <th>
-                                        Username
+                                        Nama Lengkap
                                     </th>
                                     <th>
-                                        Ruangan
-                                    </th>
-                                    <th>
-                                        Jam Mulai
-                                    </th>
-                                    <th>
-                                        Jam Berakhir
+                                        Instansi/Prodi
                                     </th>
                                     <th>
                                         Tanggal
                                     </th>
                                     <th>
-                                        Keterangan
+                                        Jam Mulai
+                                    </th>
+                                    <th>
+                                        Jam Selesai
+                                    </th>
+                                    <th>
+                                        Jenis Pinjaman
+                                    </th>
+                                    <th>
+                                        Ruang/Alat yang Dipinjam
+                                    </th>
+                                    <th>
+                                        Upload KTM/KTP
+                                    </th>
+                                    <th>
+                                        Deskripsi Kegiatan
+                                    </th>
+                                    <th>
+                                        Status
                                     </th>
                                     <th>
                                         Aksi
@@ -57,33 +74,55 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @forelse($pinjam as $p)
                                 <tr>
                                     <td class="py-1">
-                                        12345
+                                        {{ $loop->iteration}}.
                                     </td>
                                     <td>
-                                        syifau
+                                        {{ $p->nama_lengkap}}
                                     </td>
                                     <td>
-                                        Lab Komputer
+                                        {{ $p->instansi_prodi}}
                                     </td>
                                     <td>
-                                        07.00
+                                        {{ $p->tanggal}}
                                     </td>
                                     <td>
-                                        09.00
+                                        {{ $p->jam_mulai}}
                                     </td>
                                     <td>
-                                        20-05-2024
+                                        {{ $p->jam_selesai}}
                                     </td>
                                     <td>
-                                        Praktikum matkul Desweb
+                                        {{ $p->jenis_pinjaman}}
                                     </td>
                                     <td>
-                                    <button type="button" class="btn btn-success">Setuju</button>
-                                    <button type="button" class="btn btn-danger">Tolak</button>
+                                        {{ $p->ruang_alat}}
+                                    </td>
+                                    <td>
+                                        {{ $p->uplod_ktp_ktm}}
+                                    </td>
+                                    <td>
+                                        {{ $p->deskripsi_kegiatan}}
+                                    </td>
+                                    <td>
+                                        {{ $p->status}}
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Setuju</button>
+                                        <button type="button" class="btn btn-danger">Tolak</button>
+                                        <button type="button" class="btn btn-secondary">
+                                            <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-edit/{{ $p->id }}">Perbarui</a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-delete/{{ $p->id }}">Batalkan</a>
+                                        </button>
                                     </td>
                                 </tr>
+                                @empty
+                                <tr>Data Tidak Ada</tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>

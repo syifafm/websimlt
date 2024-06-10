@@ -71,7 +71,7 @@
                                         <label class="badge badge-info">Aslab</label>
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger">Hapus</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Hapus</button>
                                     </td>
                                 </tr>
                             </tbody>

@@ -10,7 +10,7 @@
                         <h4>Dashboard</h4>
                 
                         <br>
-                        <h3 class="font-weight-bold" >SISTEM INFORMASI LAB TERINTEGRASI</h3>
+                        <h3 class="font-weight-bold text-center" >SISTEM INFORMASI LAB TERINTEGRASI</h3>
                         <h6 class="font-weight-normal mb-0">Selamat Datang, Aslab</h6>
                     </div>
                     <div class="col-12 col-xl-4">
