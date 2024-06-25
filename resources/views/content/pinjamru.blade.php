@@ -1,6 +1,7 @@
 @extends ('layout.main')
 
 @section ('content')
+
 <div class="main-panel">
     <div class="content-wrapper">
         <div class="row">
@@ -129,5 +130,6 @@
                 </div>
             </div>
         </div>
+
 
         @endsection

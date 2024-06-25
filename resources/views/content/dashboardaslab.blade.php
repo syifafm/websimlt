@@ -3,15 +3,20 @@
 @section ('content')
 <div class="main-panel">
     <div class="content-wrapper">
-        <div class="row">
-            <div class="col-md-12 grid-margin">
-                <div class="row">
-                    <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                        <h4>Dashboard</h4>
-                
-                        <br>
-                        <h3 class="font-weight-bold text-center" >SISTEM INFORMASI LAB TERINTEGRASI</h3>
-                        <h6 class="font-weight-normal mb-0">Selamat Datang, Aslab</h6>
+    <h4>Dashboard</h4>
+        <br>
+        <br>
+        <div class="text-center">
+            <h3 class="font-weight-bold">SISTEM INFORMASI LAB TERINTEGRASI</h3>
+            <h6 class="font-weight-normal mb-0">Selamat Datang, Kalab</h6>
+            <div class="row">
+
+                <div class="col-md-12 grid-margin">
+                    <div class="row">
+
+                        <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                        </div>
+
                     </div>
                     <div class="col-12 col-xl-4">
                         <div class="justify-content-end d-flex">
@@ -88,4 +93,6 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
         @endsection

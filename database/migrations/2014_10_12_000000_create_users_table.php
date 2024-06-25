@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nama_lengkap',100);
             $table->string('email')->unique();
             $table->string('kontak',100);
+            $table->string('instansi_prodi',100);
             $table->string('nip_nim')->unique();
             $table->string('password');
             $table->string('status',100);
