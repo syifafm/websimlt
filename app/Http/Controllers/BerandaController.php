@@ -70,6 +70,16 @@ class BerandaController extends Controller
 
         return view('content.formpeminjaman_edit');
     }
+    public function index12()
+    {
+
+        return view('content.landingpage');
+    }
+    public function index13()
+    {
+
+        return view('content.landingpage1');
+    }
 
 
     /**

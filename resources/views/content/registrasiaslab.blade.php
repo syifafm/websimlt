@@ -29,11 +29,11 @@
               <div class="brand-logo">
                 <img src="{{asset('vendor/asset/images/logo.svg')}}" alt="logo">
               </div>
-             
-              <h4>Daftar Akun Baru</h4>
-        
+  
+              <h4>Input Akun Aslab</h4>
+      
               <h6 class="font-weight-light">Silahkan mengisi data</h6>
-              <form action="/registrasi-store" method="post" class="pt-3">
+              <form action="/registrasiaslab-store2" method="post" class="pt-3">
                 @csrf
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" name="nama_lengkap" id="exampleInputUsername1" placeholder="Nama Lengkap">
@@ -56,11 +56,11 @@
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" name="foto" id="exampleInputEmail1" placeholder="Foto">
                 </div>
-            
+
                 <div class="form-group">
-                  <input type="hidden" class="form-control form-control-lg" name="status" id="exampleInputEmail1" placeholder="Status" value="mahasiswa_tamu">
+                  <input type="hidden" class="form-control form-control-lg" name="status" id="exampleInputEmail1" placeholder="Status" value="aslab">
                 </div>
-         
+
                 <div class="mb-4">
                   <div class="form-check">
                     <label class="form-check-label text-muted">

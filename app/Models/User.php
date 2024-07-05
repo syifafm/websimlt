@@ -18,9 +18,14 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'foto',
+        'nama_lengkap',
         'email',
+        'kontak',
+        'instansi_prodi',
+        'nip_nim',
         'password',
+        'status',
     ];
 
     /**
@@ -42,4 +47,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function pinjams() {
+        return $this->hasMany(Pinjam::class);
+    }
 }

@@ -3,12 +3,11 @@
 @section ('content')
 <div class="main-panel">
     <div class="content-wrapper">
-    <h4>Dashboard</h4>
+    <h4>Users</h4>
         <br>
         <br>
         <div class="text-center">
-            <h3 class="font-weight-bold">SISTEM INFORMASI LAB TERINTEGRASI</h3>
-            <h6 class="font-weight-normal mb-0">Selamat Datang, Aslab</h6>
+            <h3 class="font-weight-bold">Data User</h3>
             <div class="row">
 
                 <div class="col-md-12 grid-margin">
@@ -32,7 +31,7 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title">Jadwal Peminjaman</h2>
+                    <h2 class="card-title">Kelola Data User</h2>
                     <p class="card-description">
                     </p>
                     

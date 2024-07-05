@@ -54,21 +54,38 @@ Route::get('/login', function () {
     return view('content.login');
 });
 
+Route::get('/registrasi-create', [LoginnController::class, 'create']);
+Route::post('/registrasi-store', [LoginnController::class, 'store']);
+
 Route::post('/postlogin', 'App\Http\Controllers\LoginnController@postlogin')->name('postlogin');
 
-Route::group(['middleware' => ['auth', 'CekStatus:Aslab']], function(){
-    
+Route::group(['middleware' => ['auth', 'CekStatus:kalab, aslab']], function () {
+
     Route::get('/pinjamru', [PinjamController::class, 'index']);
 
     Route::get('/formpeminjaman-create', [PinjamController::class, 'create']);
     Route::post('/formpeminjaman-store', [PinjamController::class, 'store']);
-    
+
     Route::get('/formpeminjaman-delete/{id}', [PinjamController::class, 'delete']);
-    
+
     Route::get('/formpeminjaman-edit/{id}', [PinjamController::class, 'edit']);
     Route::put('/formpeminjaman-update', [PinjamController::class, 'update']);
 
     Route::get('/logout', 'App\Http\Controllers\LoginnController@logout')->name('logout');
 
+    Route::get('/registrasiaslab-create2', [LoginnController::class, 'create2']);
+    Route::post('/registrasiaslab-store2', [LoginnController::class, 'store2']);
+    Route::get('/pendaftar', [LoginnController::class, 'index2']);
 });
 
+Route::get('/', function () {
+    return view('layout.header');
+});
+
+Route::get('/landingpage', [BerandaController::class, 'index12']);
+
+Route::get('/', function () {
+    return view('layout.header1');
+});
+
+Route::get('/landingpage1', [BerandaController::class, 'index13']);

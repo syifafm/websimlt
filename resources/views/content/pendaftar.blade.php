@@ -22,25 +22,43 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title">Pendaftar Baru</h2>
+                    <h2 class="card-title">Kelola Data User</h2>
                     <p class="card-description">
-
                     </p>
+                    <button type="button" class="btn btn-outline-info btn-icon-text">
+                        <i class="ti-plus btn-icon-prepend"></i>
+                        <a href="/registrasiaslab-create2">Tambah User</a>
+                    </button>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>
-                                        Id
+                                        No
+                                    </th>
+                                    <th>
+                                        Foto
                                     </th>
                                     <th>
                                         Nama Lengkap
                                     </th>
                                     <th>
-                                        Username
+                                        Email
+                                    </th>
+                                    <th>
+                                        Kontak
+                                    </th>
+                                    <th>
+                                        Instansi/Prodi
                                     </th>
                                     <th>
                                         NIP/NIM
+                                    </th>
+                                    <th>
+                                        Password
+                                    </th>
+                                    <th>
+                                        Status
                                     </th>
                                     <th>
                                         Aksi
@@ -48,24 +66,45 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @forelse($user as $u)
                                 <tr>
                                     <td class="py-1">
-                                        12345
+                                        {{ $loop -> iteration }}
                                     </td>
                                     <td>
-                                        Syifa Fauziah Mansur
+                                        {{ $u-> foto }}
                                     </td>
                                     <td>
-                                        syifau
+                                        {{ $u-> nama_lengkap }}
                                     </td>
                                     <td>
-                                       2005712
+                                        {{ $u-> email }}
                                     </td>
                                     <td>
-                                    <button type="button" class="btn btn-success">Setujui</button>
-                                    <button type="button" class="btn btn-danger">Tolak</button>
+                                        {{ $u-> kontak }}
+                                    </td>
+                                    <td>
+                                        {{ $u-> instansi_prodi }}
+                                    </td>
+                                    <td>
+                                        {{ $u-> nip_nim }}
+                                    </td>
+                                    <td>
+                                        {{ $u-> password }}
+                                    </td>
+                                    <td>
+                                        {{ $u-> status }}
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Setujui</button>
+                                        <button type="button" class="btn btn-danger">Tolak</button>
                                     </td>
                                 </tr>
+                                @empty
+                                <tr>
+                                   Data Tidak Ada 
+                                </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
