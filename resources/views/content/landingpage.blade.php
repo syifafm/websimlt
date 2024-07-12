@@ -2,13 +2,13 @@
 
 @section('content')
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
+<section id="hero" class="d-flex align-items-center" style="background-color: #343BB0;">
 
-<div class="container">
+<div class="container" style="background-color: #343BB0;">
   <div class="row">
     <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-      <h1>Better Solutions For Your Business</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h1>Laboratorium Pendidikan Multimedia</h1>
+      <h2>Selamat datang pada Sistem Informasi Manajemen Laboratorium Terintegrasi (SIM-LT)</h2>
       <div class="d-flex justify-content-center justify-content-lg-start">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -31,27 +31,27 @@
     <div class="row" data-aos="zoom-in">
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-1.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/oculus-logo1.png')}}" class="img-fluid" style="width: 150px; height: 50px;" alt="">
       </div>
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-2.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/blender-logo.png')}}" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-3.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/unity-logo.png')}}" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-4.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/unreal-logo.png')}}" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-5.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/vslogo.png')}}" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <img src="{{asset('vendor/assets1/img/clients/client-6.png')}}" class="img-fluid" alt="">
+        <img src="{{asset('vendor/assets1/img/clients/figma-logo.png')}}" class="img-fluid" alt="">
       </div>
 
     </div>
@@ -59,38 +59,52 @@
   </div>
 </section><!-- End Cliens Section -->
 
-<!-- ======= About Us Section ======= -->
-<section id="about" class="about">
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>About Us</h2>
+      <h2>layanan Kami</h2>
+      <p>SIM-LT ini merupakan sarana pendukung yang bersifat sangat strategis dalam pelaksanaan sistem pendidikan, khususnya di lingkungan Program Studi Pendidikan Multimedia.</p>
     </div>
 
-    <div class="row content">
-      <div class="col-lg-6">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-        <ul>
-          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-          <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-        </ul>
+    <div class="row">
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box">
+          <div class="icon"><i class='bx bxs-pencil'></i></div>
+          <h4><a href="">Pengajaran</a></h4>
+          <p>Mendukung kegiatan belajar mengajar dengan memberikan fasilitas dan tutorial</p>
+        </div>
       </div>
-      <div class="col-lg-6 pt-4 pt-lg-0">
-        <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <a href="#" class="btn-learn-more">Learn More</a>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+          <div class="icon"><i class='bx bx-chip'></i></div>
+          <h4><a href="">Praktikum</a></h4>
+          <p>Berkontribusi aktif dalam mengembangkan dan menyelenggarakan praktikum digital</p>
+        </div>
       </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          <div class="icon"><i class='bx bx-building-house'></i></div>
+          <h4><a href="">Ruangan</a></h4>
+          <p>Peminjaman tempat / ruangan lab yang mendukung proses pembelajaran/praktik</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <div class="icon"><i class='bx bxs-devices'></i></div>
+          <h4><a href="">Alat-Alat Lab</a></h4>
+          <p>Peminjaman alat-alat lab yang mendukung proses pembelajaran</p>
+        </div>
+      </div>
+
     </div>
 
   </div>
-</section><!-- End About Us Section -->
+</section><!-- End Services Section -->
 
 <!-- ======= Why Us Section ======= -->
 <section id="why-us" class="why-us section-bg">
@@ -148,106 +162,6 @@
   </div>
 </section><!-- End Why Us Section -->
 
-<!-- ======= Skills Section ======= -->
-<section id="skills" class="skills">
-  <div class="container" data-aos="fade-up">
-
-    <div class="row">
-      <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-        <img src="{{asset('vendor/assets1/img/skills.png')}}" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-        <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-        <p class="fst-italic">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-
-        <div class="skills-content">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Skills Section -->
-
-<!-- ======= Services Section ======= -->
-<section id="services" class="services section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Services</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    </div>
-
-    <div class="row">
-      <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bxl-dribbble"></i></div>
-          <h4><a href="">Lorem Ipsum</a></h4>
-          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-        </div>
-      </div>
-
-      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-file"></i></div>
-          <h4><a href="">Sed ut perspici</a></h4>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-        </div>
-      </div>
-
-      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-tachometer"></i></div>
-          <h4><a href="">Magni Dolores</a></h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-        </div>
-      </div>
-
-      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-layer"></i></div>
-          <h4><a href="">Nemo Enim</a></h4>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Services Section -->
-
 <!-- ======= Cta Section ======= -->
 <section id="cta" class="cta">
   <div class="container" data-aos="zoom-in">
@@ -258,27 +172,173 @@
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="col-lg-3 cta-btn-container text-center">
-        <a class="cta-btn align-middle" href="#">Call To Action</a>
+        <a class="cta-btn align-middle" href="#">Kunjungi Situs</a>
       </div>
     </div>
 
   </div>
 </section><!-- End Cta Section -->
 
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Pricing</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="box">
+          <h3>Free Plan</h3>
+          <h4><sup>$</sup>0<span>per month</span></h4>
+          <ul>
+            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+            <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+            <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+          </ul>
+          <a href="#" class="buy-btn">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+        <div class="box featured">
+          <h3>Business Plan</h3>
+          <h4><sup>$</sup>29<span>per month</span></h4>
+          <ul>
+            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+          </ul>
+          <a href="#" class="buy-btn">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <div class="box">
+          <h3>Developer Plan</h3>
+          <h4><sup>$</sup>49<span>per month</span></h4>
+          <ul>
+            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+          </ul>
+          <a href="#" class="buy-btn">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Pricing Section -->
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Team</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Product Manager</span>
+            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>CTO</span>
+            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-4.jpg')}}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Portfolio</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <h2>Galeri Kegiatan</h2>
+      <p>Berbagai kegiatan telah dilakukan, berikut adalah galeri dokumentasi dari berbagai kegiatan program studi, dosen, maupun mahasiswa.</p>
     </div>
 
     <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
       <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-app">App</li>
-      <li data-filter=".filter-card">Card</li>
-      <li data-filter=".filter-web">Web</li>
+      <li data-filter=".filter-app">Kegiatan Dosen</li>
+      <li data-filter=".filter-card">Kegiatan Mahasiswa</li>
+      <li data-filter=".filter-web">Kegiatan Prodi</li>
     </ul>
 
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -378,164 +438,19 @@
   </div>
 </section><!-- End Portfolio Section -->
 
-<!-- ======= Team Section ======= -->
-<section id="team" class="team section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Team</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    </div>
-
-    <div class="row">
-
-      <div class="col-lg-6">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-            <div class="social">
-              <a href=""><i class="ri-twitter-fill"></i></a>
-              <a href=""><i class="ri-facebook-fill"></i></a>
-              <a href=""><i class="ri-instagram-fill"></i></a>
-              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mt-4 mt-lg-0">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-            <div class="social">
-              <a href=""><i class="ri-twitter-fill"></i></a>
-              <a href=""><i class="ri-facebook-fill"></i></a>
-              <a href=""><i class="ri-instagram-fill"></i></a>
-              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mt-4">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-            <div class="social">
-              <a href=""><i class="ri-twitter-fill"></i></a>
-              <a href=""><i class="ri-facebook-fill"></i></a>
-              <a href=""><i class="ri-instagram-fill"></i></a>
-              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mt-4">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-          <div class="pic"><img src="{{asset('vendor/assets1/img/team/team-4.jpg')}}" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-            <div class="social">
-              <a href=""><i class="ri-twitter-fill"></i></a>
-              <a href=""><i class="ri-facebook-fill"></i></a>
-              <a href=""><i class="ri-instagram-fill"></i></a>
-              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Team Section -->
-
-<!-- ======= Pricing Section ======= -->
-<section id="pricing" class="pricing">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Pricing</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-    </div>
-
-    <div class="row">
-
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="box">
-          <h3>Free Plan</h3>
-          <h4><sup>$</sup>0<span>per month</span></h4>
-          <ul>
-            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-            <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-            <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-          </ul>
-          <a href="#" class="buy-btn">Get Started</a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-        <div class="box featured">
-          <h3>Business Plan</h3>
-          <h4><sup>$</sup>29<span>per month</span></h4>
-          <ul>
-            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-          </ul>
-          <a href="#" class="buy-btn">Get Started</a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="box">
-          <h3>Developer Plan</h3>
-          <h4><sup>$</sup>49<span>per month</span></h4>
-          <ul>
-            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-          </ul>
-          <a href="#" class="buy-btn">Get Started</a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Pricing Section -->
-
-<!-- ======= Frequently Asked Questions Section ======= -->
+<!-- <-- ======= Frequently Asked Questions Section ======= -->
 <section id="faq" class="faq section-bg">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <h2>Frequently Asked Questions</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <p>Berikut adalah pertanyaan yang sering muncul terkait Sistem Informasi Manajemen Laboratorium Terintegrasi (SIM-LT).</p>
     </div>
 
     <div class="faq-list">
       <ul>
         <li data-aos="fade-up" data-aos-delay="100">
-          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa itu SIM-LT? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
           <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
             <p>
               Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -544,7 +459,7 @@
         </li>
 
         <li data-aos="fade-up" data-aos-delay="200">
-          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Apa keunggulan SIM-LT? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
           <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
             <p>
               Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.

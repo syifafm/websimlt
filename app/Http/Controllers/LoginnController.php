@@ -64,8 +64,6 @@ class LoginnController extends Controller
     {
         return view('content.registrasiaslab');
     }
-
-
     public function index2(){
         $user= User::all();
         return view('content.pendaftar', compact('user'));

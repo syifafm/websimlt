@@ -25,10 +25,12 @@
                     <h2 class="card-title">Kelola Data User</h2>
                     <p class="card-description">
                     </p>
+                    @if ( auth()->user()->status=="kalab" && auth()->user()->id=="1")
                     <button type="button" class="btn btn-outline-info btn-icon-text">
                         <i class="ti-plus btn-icon-prepend"></i>
                         <a href="/registrasiaslab-create2">Tambah User</a>
                     </button>
+                    @endif
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -98,6 +100,9 @@
                                     <td>
                                         <button type="button" class="btn btn-success">Setujui</button>
                                         <button type="button" class="btn btn-danger">Tolak</button>
+                                        <button type="button" class="btn btn-secondary">
+                                            <a class="ti-plus btn-icon-prepend" href="/pinjamru/{{ $u->id }}">Pinjam</a>
+                                        </button>
                                     </td>
                                 </tr>
                                 @empty

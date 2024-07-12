@@ -13,7 +13,7 @@ class CekStatus
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle($request, Closure $next, ...$statuss)
+    public function handle($request, Closure $next, ...$statuss): Response
     {
         if(in_array($request->user()->status, $statuss)){
             return $next($request);

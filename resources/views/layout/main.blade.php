@@ -361,12 +361,12 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+            <a class="nav-link" href="{{url('pinjamru')}}" aria-expanded="false" aria-controls="icons">
               <i class="icon-book menu-icon"></i>
               <span class="menu-title">Data Pinjam</span>
-              <i class="menu-arrow"></i>
+              <!-- <i class="menu-arrow"></i> -->
             </a>
-            <div class="collapse" id="icons">
+            <!-- <div class="collapse" id="icons">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Pinjam Ruang</a></li>
               </ul>
@@ -375,7 +375,7 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Pinjam Alat</a></li>
               </ul>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/documentation/documentation.html">

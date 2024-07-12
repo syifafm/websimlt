@@ -28,7 +28,7 @@
 
                     </p>
                     <button type="button" class="btn btn-outline-info btn-icon-text">
-                        <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-create">Tambah pinjaman</a>
+                        <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-create/{{ $user->first()->id }}">Tambah pinjaman</a>
 
                     </button>
                     <div class="table-responsive">

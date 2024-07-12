@@ -61,10 +61,10 @@ Route::post('/postlogin', 'App\Http\Controllers\LoginnController@postlogin')->na
 
 Route::group(['middleware' => ['auth', 'CekStatus:kalab, aslab']], function () {
 
-    Route::get('/pinjamru', [PinjamController::class, 'index']);
+    Route::get('/pinjamru/{id}', [PinjamController::class, 'index']);
 
-    Route::get('/formpeminjaman-create', [PinjamController::class, 'create']);
-    Route::post('/formpeminjaman-store', [PinjamController::class, 'store']);
+    Route::get('/formpeminjaman-create/{id}', [PinjamController::class, 'create']);
+    Route::post('/formpeminjaman-store/{id}', [PinjamController::class, 'store']);
 
     Route::get('/formpeminjaman-delete/{id}', [PinjamController::class, 'delete']);
 
@@ -83,9 +83,12 @@ Route::get('/', function () {
 });
 
 Route::get('/landingpage', [BerandaController::class, 'index12']);
+Route::get('/profil', [BerandaController::class, 'index14']);
 
 Route::get('/', function () {
     return view('layout.header1');
 });
 
 Route::get('/landingpage1', [BerandaController::class, 'index13']);
+
+

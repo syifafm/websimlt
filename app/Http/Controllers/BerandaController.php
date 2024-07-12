@@ -80,6 +80,9 @@ class BerandaController extends Controller
 
         return view('content.landingpage1');
     }
+    public function index14(){
+        return view('content.profil');
+    }
 
 
     /**

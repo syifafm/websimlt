@@ -11,9 +11,10 @@
                         <p class="card-description">
                             Silakan mengisi dan lengkapi form dibawah ini!
                         </p>
-                        <form action="/formpeminjaman-store" method="post" class="forms-sample">
+                        <form action="/formpeminjaman-store/{{ $user->first()->id }}" method="post" class="forms-sample">
                             @csrf
                             <div class="form-group">
+                            <input type="hidden" class="form-control" id="user_id" name="user_id" value="{{ $user->first()->id }}" placeholder="Nama">
                                 <label for="nama">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="nama" name="nama_lengkap" placeholder="Nama">
                             </div>
@@ -32,6 +33,10 @@
                             <div class="form-group">
                                 <label for="ws">Waktu Selesai</label>
                                 <input type="text" class="form-control" id="ws" name="jam_selesai" placeholder="Waktu Selesai">
+                            </div>
+                            <div class="form-group">
+                                <label for="ws">Durasi</label>
+                                <input type="text" class="form-control" id="ws" name="durasi" placeholder="Durasi">
                             </div>
                             <div class="form-group">
                                 <label for="jp">Jenis Peminjaman</label>
