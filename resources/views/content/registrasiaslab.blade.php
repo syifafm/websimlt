@@ -14,7 +14,7 @@
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/style.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/styleee.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('vendor/asset/images/favicon.png')}}" />
 </head>

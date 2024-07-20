@@ -26,7 +26,7 @@
   <link href="{{asset('vendor/assets1/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link rel="stylesheet" href="{{asset('vendor/assets1/css/stylee.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/assets1/css/styless.css')}}">
 
 </head>
 
@@ -35,17 +35,17 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">SIM-LT</a></h1>
+      <h1 class="logo me-auto"><a href="/landingpage">SIM-LT</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto active" href="/landingpage">Beranda</a></li>
           <li class="dropdown">
             <a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Profil</a></li>
+              <li><a href="/profil">Profil</a></li>
               <li><a href="#">Struktur Organisasi</a></li>
               <li><a href="#">Riset Laboratorium</a></li>
               <li><a href="#">Informasi</a></li>
@@ -62,7 +62,7 @@
           </li>
           <li><a class="nav-link scrollto" href="#portfolio">Galeri Kegiatan</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-          <li><a class="getstarted scrollto" href="#"><i class="bi bi-box-arrow-in-right"></i>&nbsp; Login</a></li>
+          <li><a class="getstarted scrollto" href="/login"><i class="bi bi-box-arrow-in-right"></i>&nbsp; Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -95,7 +95,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
@@ -132,7 +132,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>SIM-LT</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

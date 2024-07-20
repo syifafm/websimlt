@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class BerandaController extends Controller
 {
@@ -37,8 +38,8 @@ class BerandaController extends Controller
     }
     public function index5()
     {
-
-        return view('content.pinjamal');
+        $user= User::all();
+        return view('content.pinjaman', compact('user'));
     }
     public function index6()
     {

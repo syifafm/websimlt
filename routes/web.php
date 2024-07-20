@@ -26,7 +26,7 @@ Route::get('/dashboard', [BerandaController::class, 'index1']);
 Route::get('/pendaftar', [BerandaController::class, 'index2']);
 Route::get('/users', [BerandaController::class, 'index3']);
 // Route::get('/pinjamru', [BerandaController::class, 'index4']);
-Route::get('/pinjamal', [BerandaController::class, 'index5']);
+Route::get('/pinjaman', [BerandaController::class, 'index5']);
 Route::get('/laporanru', [BerandaController::class, 'index6']);
 Route::get('/laporanal', [BerandaController::class, 'index7']);
 
@@ -77,6 +77,8 @@ Route::group(['middleware' => ['auth', 'CekStatus:kalab, aslab']], function () {
     Route::post('/registrasiaslab-store2', [LoginnController::class, 'store2']);
     Route::get('/pendaftar', [LoginnController::class, 'index2']);
 });
+
+Route::post('/postlogin', 'App\Http\Controllers\LoginnController@postlogin')->name('postlogin');
 
 Route::get('/', function () {
     return view('layout.header');

@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('vendor/asset/js/select.dataTables.min.css')}}">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/style.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/styleee.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('vendor/asset/images/favicon.png')}}" />
 </head>
@@ -26,8 +26,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('vendor/asset/images/Logotype Horizontal - Prodi.png')}}" class="mr-5" style="width: 110px; height: 60px;" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('vendor/asset/images/Logomark - Prodi.png')}}" style="width: 50px; height: 50px;" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="{{url('dashboard')}}"><img src="{{asset('vendor/asset/images/Logotype Horizontal - Prodi.png')}}" class="mr-5" style="width: 110px; height: 60px;" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="{{url('dashboard')}}"><img src="{{asset('vendor/asset/images/Logomark - Prodi.png')}}" style="width: 50px; height: 50px;" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -299,23 +299,23 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link"  href="{{url('dashboard')}}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="{{url('pendaftar')}}">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Manajemen User</span>
-              <i class="menu-arrow"></i>
+              <!-- <i class="menu-arrow"></i> -->
             </a>
-            <div class="collapse" id="ui-basic">
+            <!-- <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Pendaftar Baru</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Kelola Data User</a></li>
               </ul>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
@@ -338,8 +338,8 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Peminjaman Lab</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Peminjaman Alat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('laporanru')}}">Peminjaman Lab</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('laporanal')}}">Peminjaman Alat</a></li>
               </ul>
             </div>
           </li>
@@ -387,7 +387,6 @@
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="icon-head menu-icon"></i>
               <span class="menu-title">Bantuan</span>
-              <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">

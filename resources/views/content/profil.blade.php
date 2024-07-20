@@ -2,17 +2,22 @@
 
 @section('content')
 
-
-<!-- ======= Profil Section ======= -->
+<!-- ======= Header Profil Section ======= -->
 <section id="profil" class="profil">
     <div class="container">
-
         <div class="section-profil">
             <h2>PROFIL</h2>
         </div>
-
+        <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/landingpage">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Profil</li>
+                </ol>
+            </nav>
     </div>
-</section><!-- End Profil Section -->
+</section><!-- Header Profil Section -->
+
 
 <!-- ======= Content Profil Section ======= -->
 <section id="pricing" class="pricing section-bg">

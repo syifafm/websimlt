@@ -14,60 +14,42 @@
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/style.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/styleee.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('vendor/asset/images/favicon.png')}}" />
 </head>
 
 <body>
-  <div class="container-scroller">
-    <div class="container-fluid page-body-wrapper full-page-wrapper">
-      <div class="content-wrapper d-flex align-items-center auth px-0">
-        <div class="row w-100 mx-0">
-          <div class="col-lg-4 mx-auto">
-            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <!-- <div class="brand-logo">
-                <img src="{{asset('vendor/asset//images/logo.svg')}}" alt="logo">
-              </div> -->
-              <h4>Hallo Sobat Pedia</h4>
-              <h6 class="font-weight-light">Silahkan masukan email dan password yang terdaftar.</h6>
-              <form action="{{route('postlogin')}}" class="pt-3" method="post">
-              {{ csrf_field() }} 
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-lg"  name="email" id="exampleInputEmail1" placeholder="Email">
+<div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="row" style="background-color: #e2e2e2;">
+            <div class="col-md-6 p-0">
+                <div class="left-side">
+                    <img src="{{ asset('vendor/asset/images/auth/cta-bg.jpg') }}" alt="campus" style="width:1500px;height:700px;" class="img-fluid">
                 </div>
-                <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button class="mt-3" type="submit">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Masuk</a>
-                </button>
-                <div class="my-2 d-flex justify-content-between align-items-center">
-                  <!-- <div class="form-check">
-                    <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input">
-                      Keep me signed in
-                    </label>
-                  </div>
-                  <a href="#" class="auth-link text-black">Forgot password?</a>
-                </div>
-                <div class="mb-2">
-                  <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                    <i class="ti-facebook mr-2"></i>Connect using facebook
-                  </button>
-                </div> -->
-                <div class="text-center mt-4 font-weight-light">
-                  Don't have an account? <a class="text-primary" href="/registrasi-create">Create</a>
-                </div>
-              </form>
             </div>
-          </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="login-box">
+                    <a href="/landingpage" class="back-link">&larr; Kembali</a>
+                    <h4>Halaman Login</h4>
+                    <p>Silakan masukan Email dan kata sandi yang terdaftar</p>
+                    <form action="{{route('postlogin')}}" method="post">
+                    {{ csrf_field() }} 
+                        <div class="form-group">
+                        <input type="email" class="form-control form-control-lg"  name="email" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                        <div class="text-center mt-4 font-weight-light">
+                            Tidak punya akun? <a class="text-primary" href="/registrasi-create">Buat akun</a> 
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- content-wrapper ends -->
     </div>
-    <!-- page-body-wrapper ends -->
-  </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
   <script src="{{asset('vendor/asset/vendors/js/vendor.bundle.base.js')}}"></script>

@@ -18,6 +18,8 @@ class CekStatus
         if(in_array($request->user()->status, $statuss)){
             return $next($request);
         }
-        return $next('/dashboardaslab');
+        // return $next('/dashboardaslab');
+        // Mengarahkan pengguna ke halaman /dashboardaslab jika status tidak sesuai
+        return redirect('/dashboardaslab');
     }
 }

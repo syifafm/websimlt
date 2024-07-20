@@ -18,73 +18,36 @@
             </div>
         </div>
 
-        <div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
+        <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title">Laporan Jadwal</h2>
-                    <p class="card-description">
-                    </p>
-                        <button type="button" class="btn btn-outline-success btn-icon-text">
-                          Print
-                          <i class="ti-printer btn-icon-append"></i>                                                                              
-                        </button>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Id
-                                    </th>
-                                    <th>
-                                        Username
-                                    </th>
-                                    <th>
-                                        Alat
-                                    </th>
-                                    <th>
-                                        Jam Mulai
-                                    </th>
-                                    <th>
-                                        Jam Berakhir
-                                    </th>
-                                    <th>
-                                        Tanggal
-                                    </th>
-                                    <th>
-                                        Keterangan
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-1">
-                                        12345
-                                    </td>
-                                    <td>
-                                        syifau
-                                    </td>
-                                    <td>
-                                        Kamera Canon
-                                    </td>
-                                    <td>
-                                        07.00
-                                    </td>
-                                    <td>
-                                        09.00
-                                    </td>
-                                    <td>
-                                        20-05-2024
-                                    </td>
-                                    <td>
-                                        Praktik Fotografi
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                  <p class="card-title">Advanced Table</p>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="table-responsive">
+                        <table id="example" class="display expandable-table" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Quote#</th>
+                              <th>Product</th>
+                              <th>Business type</th>
+                              <th>Policy holder</th>
+                              <th>Premium</th>
+                              <th>Status</th>
+                              <th>Updated at</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                      </table>
+                      </div>
                     </div>
+                  </div>
+                  </div>
                 </div>
+
+                
+              </div>
             </div>
-        </div>
 
         @endsection
