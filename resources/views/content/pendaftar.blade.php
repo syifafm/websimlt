@@ -26,10 +26,7 @@
                     <p class="card-description">
                     </p>
                     @if ( auth()->user()->status=="kalab" && auth()->user()->id=="1")
-                    <button type="button" class="btn btn-outline-info btn-icon-text">
-                        <i class="ti-plus btn-icon-prepend"></i>
-                        <a href="/registrasiaslab-create2">Tambah User</a>
-                    </button>
+                    <a href="/registrasiaslab-create2" class="btn btn-outline-info btn-icon-text"><i class="ti-plus btn-icon-prepend"></i> Tambah User</a>
                     @endif
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -98,17 +95,14 @@
                                         {{ $u-> status }}
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-success">Setujui</button>
-                                        <button type="button" class="btn btn-danger">Tolak</button>
-                                        <button type="button" class="btn btn-secondary">
-                                            <a class="ti-plus btn-icon-prepend" href="/pinjamru/{{ $u->id }}">Pinjam</a>
-                                        </button>
+                                        <a href="/pinjamru/{{ $u->id }}" class="btn btn-success"><i class="ti-plus btn-icon-prepend"></i> Pinjam</a>
+                                        <a href="/pengembalian/{{ $u->id }}" class="btn btn-secondary"><i class="ti-plus btn-icon-prepend"></i> Pengembalian</a>
                                     </td>
                                 </tr>
                                 @empty
-                                <tr>
-                                   Data Tidak Ada 
-                                </tr>
+                                <div class="alert alert-danger">
+                                      Data Belum Tersedia.
+                                  </div>
                                 @endforelse
                             </tbody>
                         </table>

@@ -8,7 +8,7 @@
         <br>
         <div class="text-center">
             <h3 class="font-weight-bold">SISTEM INFORMASI LAB TERINTEGRASI</h3>
-            <h6 class="font-weight-normal mb-0">Selamat Datang, Aslab</h6>
+            <h6 class="font-weight-normal mb-0">Selamat Datang</h6>
             <div class="row">
 
                 <div class="col-md-12 grid-margin">

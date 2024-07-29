@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('vendor/assets1/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('vendor/assets1/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('vendor/assets1/img/pmm.png')}}" rel="icon">
+  <link href="{{asset('vendor/assets1/img/Logomark - Prodi.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -41,13 +41,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/landingpage">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#hero">Beranda</a></li>
           <li class="dropdown">
             <a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/profil">Profil</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li><a href="#">Riset Laboratorium</a></li>
+              <li><a href="/struktur">Struktur Organisasi</a></li>
+              <li><a href="/riset">Riset Laboratorium</a></li>
               <li><a href="#">Informasi</a></li>
             </ul>
           </li>
@@ -95,28 +95,25 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/landingpage">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/profil">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/portfolio">Galeri Kegiatan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Layanan Kami</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pengajaran dan Praktikum</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Riset Laboratorium</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ruang Lab</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Barang/Alat Lab</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Sosial Media</h4>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

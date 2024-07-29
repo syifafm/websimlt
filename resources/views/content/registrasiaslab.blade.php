@@ -14,75 +14,72 @@
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/styleee.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/asset/css/vertical-layout-light/stylles.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('vendor/asset/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{asset('vendor/asset/images/pmm.png')}}" />
 </head>
 
 <body>
-  <div class="container-scroller">
-    <div class="container-fluid page-body-wrapper full-page-wrapper">
-      <div class="content-wrapper d-flex align-items-center auth px-0">
-        <div class="row w-100 mx-0">
-          <div class="col-lg-4 mx-auto">
-            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div class="brand-logo">
-                <img src="{{asset('vendor/asset/images/logo.svg')}}" alt="logo">
-              </div>
-  
-              <h4>Input Akun Aslab</h4>
-      
-              <h6 class="font-weight-light">Silahkan mengisi data</h6>
-              <form action="/registrasiaslab-store2" method="post" class="pt-3">
-                @csrf
-                <div class="form-group">
+  <div class="login-container">
+    <div class="row" style="background-color: #f4f4f4;">
+      <div class="col-md-6 p-0">
+        <div class="left-side">
+          <img src="{{ asset('vendor/asset/images/auth/bg-ciblue.jpeg') }}" alt="campus" style="width:1500px;height:700px;" class="img-fluid">
+        </div>
+        <div class="logo-container">
+          <img src="{{ asset('vendor/asset/images/logo_upikita.png') }}" alt="logo1" class="logo">
+          <img src="{{ asset('vendor/asset/images/logoverti_pmm.png') }}" alt="logo2" class="logo">
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="register-container">
+          <div class="register-card">
+            <h4 style="text-align: left;">Daftar Akun Baru</h4>
+            <p style="text-align: left;">Silakan Input Akun Aslab</p>
+            <form action="/registrasiaslab-store2" method="post" class="pt-3">
+              @csrf
+              <div class="form-row">
+                <div class="form-group" style="padding-right: 0.5rem;">
                   <input type="text" class="form-control form-control-lg" name="nama_lengkap" id="exampleInputUsername1" placeholder="Nama Lengkap">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" name="nip_nim" id="exampleInputEmail1" placeholder="NIP/NIM">
                 </div>
+              </div>
+              <div class="form-row">
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" name="instansi_prodi" id="exampleInputEmail1" placeholder="Instansi/Prodi">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" name="kontak" id="exampleInputEmail1" placeholder="Kontak">
                 </div>
+              </div>
+              <div class="form-row">
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" name="email" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg" name="password" id="exampleInputEmail1" placeholder="Password">
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" name="foto" id="exampleInputEmail1" placeholder="Foto">
-                </div>
-
-                <div class="form-group">
-                  <input type="hidden" class="form-control form-control-lg" name="status" id="exampleInputEmail1" placeholder="Status" value="aslab">
-                </div>
-
-                <div class="mb-4">
-                  <div class="form-check">
-                    <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input">
-                      I agree to all Terms & Conditions
-                    </label>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <button type="submit"><a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</a></button>
-                </div>
+              </div>
+              <div class="form-group">
+                <label for="foto">Pas Photo (Wajib. Max. 512KB)</label>
+                <input type="file" class="from-control" id="fromFile" name="foto">
+              </div>
+              <div class="form-group">
+                <input type="hidden" class="form-control form-control-lg" name="status" id="exampleInputEmail1" placeholder="Status" value="aslab">
+              </div>
+              <div class="mt-3">
+                <button type="submit" class="btn btn-block">Submit</button>
                 <div class="text-center mt-4 font-weight-light">
-                  Already have an account? <a href="login.html" class="text-primary">Login</a>
+                  <a class="text-primary" href="/pendaftar"><strong>Batalkan</strong></a>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <!-- content-wrapper ends -->
     </div>
-    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->

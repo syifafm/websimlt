@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pinjam;
 use App\Models\User;
+use App\Models\Pengembalian;
 
 class PinjamController extends Controller
 {
@@ -14,9 +15,24 @@ class PinjamController extends Controller
 
         return view('content.pinjamru', compact('pinjam','user'));
     }
+    public function index2(){
+        $pengembalian = Pengembalian::all();
+        $user = User::all();
+
+        return view('content.pengembalian', compact('pengembalian','user'));
+    }
+    public function datapinjam(){
+        $pinjam = Pinjam::all();
+    
+        return view('content.pinjamruall', compact('pinjam'));
+    }
     public function create($id){
         $user = User::all();
         return view('content.formpeminjaman', compact('user'));
+    }
+    public function create2($id){
+        $user = User::all();
+        return view('content.formpengembalian', compact('user'));
     }
     public function store(Request $request){
         $pinjam = Pinjam::create([
@@ -35,6 +51,21 @@ class PinjamController extends Controller
         ]);
 
         return redirect('/pinjamru/{id}');
+    }
+    public function store2(Request $request){
+        $pengembalian = Pengembalian::create([
+            'user_id'=> $request -> user_id,
+            'nama_lengkap' => $request -> nama_lengkap,
+            'instansi_prodi' => $request -> instansi_prodi,
+            'tanggal_pinjam' => $request -> tanggal_pinjam,
+            'tanggal_pengembalian' => $request -> tanggal_pengembalian,
+            'jenis_pinjaman' => $request -> jenis_pinjaman,
+            'ruang_alat' => $request -> ruang_alat,
+            'uplod_bukti_pengembalian' => $request -> uplod_bukti_pengembalian,
+            'status' => $request -> status,
+        ]);
+
+        return redirect('/pengembalian/{id}');
     }
     public function delete($id){
         $pinjam = Pinjam::find($id)->delete();

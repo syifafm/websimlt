@@ -25,12 +25,10 @@
                 <div class="card-body">
                     <h2 class="card-title">Request Peminjaman</h2>
                     <p class="card-description">
-
                     </p>
-                    <button type="button" class="btn btn-outline-info btn-icon-text">
-                        <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-create/{{ $user->first()->id }}">Tambah pinjaman</a>
-
-                    </button>
+                    <a href="/formpeminjaman-create/{{ $user->first()->id }}" class="btn btn-outline-info btn-icon-text">
+                        <i class="ti-plus btn-icon-prepend"></i>Tambah pinjaman
+                    </a>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -108,21 +106,21 @@
                                         {{ $p->deskripsi_kegiatan}}
                                     </td>
                                     <td>
-                                        {{ $p->status}}
+                                        <label class="badge badge-success">{{ $p->status}}</label>
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-success">Setuju</button>
-                                        <button type="button" class="btn btn-danger">Tolak</button>
-                                        <button type="button" class="btn btn-secondary">
-                                            <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-edit/{{ $p->id }}">Perbarui</a>
-                                        </button>
-                                        <button type="button" class="btn btn-danger">
-                                            <a class="ti-plus btn-icon-prepend" href="/formpeminjaman-delete/{{ $p->id }}">Batalkan</a>
-                                        </button>
+                                        <a href="/formpeminjaman-edit/{{ $p->id }}" class="btn btn-secondary">
+                                            <i class="ti-plus btn-icon-prepend"></i>Perbarui
+                                        </a>
+                                        <a href="/formpeminjaman-delete/{{ $p->id }}" class="btn btn-danger">
+                                            <i class="ti-plus btn-icon-prepend"></i> Batalkan
+                                        </a>
                                     </td>
                                 </tr>
                                 @empty
-                                <tr>Data Tidak Ada</tr>
+                                <div class="alert alert-danger">
+                                      Data Belum Tersedia.
+                                  </div>
                                 @endforelse
                             </tbody>
                         </table>

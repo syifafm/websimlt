@@ -26,11 +26,6 @@ class BerandaController extends Controller
 
         return view('content.pendaftar');
     }
-    public function index3()
-    {
-
-        return view('content.users');
-    }
     public function index4()
     {
 
@@ -44,12 +39,7 @@ class BerandaController extends Controller
     public function index6()
     {
 
-        return view('content.laporanru');
-    }
-    public function index7()
-    {
-
-        return view('content.laporanal');
+        return view('content.barang');
     }
     public function index8()
     {
@@ -71,18 +61,23 @@ class BerandaController extends Controller
 
         return view('content.formpeminjaman_edit');
     }
+
+     /**
+     * Controller untuk Landing Page.
+     */
     public function index12()
     {
 
         return view('content.landingpage');
     }
-    public function index13()
-    {
-
-        return view('content.landingpage1');
+    public function index13(){
+        return view('content.profil');
     }
     public function index14(){
-        return view('content.profil');
+        return view('content.struktur');
+    }
+    public function index15(){
+        return view('content.riset');
     }
 
 

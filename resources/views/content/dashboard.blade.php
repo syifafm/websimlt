@@ -3,12 +3,12 @@
 @section ('content')
 <div class="main-panel">
     <div class="content-wrapper">
-        <h4>Dashboard</h4>
+    <h4>Dashboard</h4>
         <br>
         <br>
         <div class="text-center">
             <h3 class="font-weight-bold">SISTEM INFORMASI LAB TERINTEGRASI</h3>
-            <h6 class="font-weight-normal mb-0">Selamat Datang, Kalab</h6>
+            <h6 class="font-weight-normal mb-0">Selamat Datang</h6>
             <div class="row">
 
                 <div class="col-md-12 grid-margin">
@@ -52,11 +52,6 @@
                                     </div>
                                 </div>
                                 <div class="card-footer bg-info">
-                                    <a href="#" class="text-light text-decoration-none" style="padding : 1em 3em 1em 3em">
-                                        Selebihnya <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
 
@@ -79,11 +74,6 @@
                                     </div>
                                 </div>
                                 <div class="card-footer bg-success">
-                                    <a href="#" class="text-light text-decoration-none" style="padding : 1em 3em 1em 3em">
-                                        Selebihnya <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
 
@@ -106,11 +96,6 @@
                                     </div>
                                 </div>
                                 <div class="card-footer bg-warning">
-                                    <a href="#" class="text-light text-decoration-none" style="padding : 1em 3em 1em 3em">
-                                        Selebihnya <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
 
@@ -133,11 +118,6 @@
                                     </div>
                                 </div>
                                 <div class="card-footer bg-danger">
-                                    <a href="#" class="text-light text-decoration-none" style="padding : 1em 3em 1em 3em">
-                                        Selebihnya <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
 
